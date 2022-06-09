@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.SwingConstants;
+import javax.swing.WindowConstants;
 import javax.swing.border.LineBorder;
 import javax.swing.JButton;
 
@@ -38,7 +39,7 @@ public class CheckTimeFrame extends JFrame{
    
    private void initialize() {
       setBounds(100, 100, 613, 392);
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
       getContentPane().setLayout(null);
       
       JPanel panel = new JPanel();

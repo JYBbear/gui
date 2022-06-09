@@ -20,6 +20,7 @@ import java.text.SimpleDateFormat;
 import java.awt.event.ActionEvent;
 import java.awt.CardLayout;
 import javax.swing.SwingConstants;
+import javax.swing.WindowConstants;
 
 public class TimerFrame extends JFrame{
 	Thread timeDisplay;
@@ -52,7 +53,7 @@ public class TimerFrame extends JFrame{
     */
    private void initialize() {
       setBounds(100, 100, 663, 409);
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
       getContentPane().setLayout(null);
       
       JPanel panel = new JPanel();
@@ -133,6 +134,13 @@ public class TimerFrame extends JFrame{
       pauseTimerButton.setEnabled(false);
       finishTimerButton.setEnabled(false);
       
+      TimerGraphButton.addActionListener(new ActionListener() {
+    	  public void actionPerformed(ActionEvent e) {
+    		 //TimeGraphFrame graph = new TimeGraphFrame();
+    		 // graph.setVisible(true);
+    	  }
+      });
+      
       startTimerButton.addActionListener(new ActionListener() {
           public void actionPerformed(ActionEvent e) {
         	  startTimerButton.setEnabled(false);
@@ -208,5 +216,6 @@ public class TimerFrame extends JFrame{
               checktimer.setVisible(true);
           }
        });
+     
    }
 }

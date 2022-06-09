@@ -9,6 +9,7 @@ import java.awt.Font;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JTable;
+import javax.swing.WindowConstants;
 import javax.swing.ImageIcon;
 
 public class StudyFrame extends JFrame{
@@ -44,7 +45,7 @@ public class StudyFrame extends JFrame{
       this.setForeground(new Color(240, 230, 140));
       this.getContentPane().setForeground(new Color(255, 255, 255));
       this.setSize(900, 700);
-      this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
       this.getContentPane().setLayout(null);
       
       JPanel panel = new JPanel();
