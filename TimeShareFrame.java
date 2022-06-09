@@ -12,6 +12,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JScrollBar;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 import javax.swing.JButton;
 import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JList;
@@ -42,7 +43,7 @@ public class TimeShareFrame extends JFrame {
 	 * Create the frame.
 	 */
 	public TimeShareFrame() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 271, 519);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
